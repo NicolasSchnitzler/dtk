@@ -60,10 +60,16 @@ protected slots:
 protected slots:
     void onBlockChanged(int index);
     void onTitleChanged(const QString& text);
-    void onMonitoringChanged(bool);
 
 protected slots:
+    void onBrowse(void);
+    void onBrowseDirectory(void);
+    void onValueChanged(bool);
+    void onValueChanged(int);
+    void onValueChanged(double);
+    void onValueChanged(const QString&);
     void onImplementationChanged(const QString&);
+    void onMonitoringChanged(bool checked);
 
 protected:
     dtkComposerSceneNodeEditorPrivate *d;
